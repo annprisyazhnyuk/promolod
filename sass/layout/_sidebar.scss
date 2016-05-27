@@ -1,0 +1,47 @@
+#sidebar {
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 900px) {
+    position: relative;
+    @include span(3.5 of 12 last);
+    max-width: 600px;
+    margin: 150px auto 0;
+    padding: 10px 0;
+    z-index: 998;
+    * {
+      z-index: 998;
+    }
+  }
+}
+
+
+#home-sidebar,
+#sidebar {
+  @media screen and (max-width: 899px){
+    display: none;
+  }
+    z-index: 998;
+    * {
+      z-index: 998;
+    }
+
+  .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 99% !important;
+    ._2p3a {
+      width: 100% !important;
+    }
+  }
+}
+.widget-title {
+  font: 300 30px/24px 'Open Sans', sans-serif;
+  color: #303030;
+  margin-bottom: 7px;
+  &:after {
+    content: ' :';
+    font-size: 30px;
+    font-weight: 700;
+    color: #55D6F5;
+  }
+}

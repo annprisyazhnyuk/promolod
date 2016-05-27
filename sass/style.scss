@@ -1,0 +1,63 @@
+/*!
+Theme Name: Promolod
+Author: ajc + ne ajc
+Description: Some cute theme
+Text Domain: promolod
+Tags:
+*/
+
+/* ------------------------- Section: Susy settings -------------------------- */
+@import "layout/grids";
+
+/* ------------------------- Section: Reset ---------------------------------- */
+@import "compass/reset";
+
+/* ------------------------- Part: Content ----------------------------------- */
+@import "layout/content";
+
+/* ------------------------- Section: Header --------------------------------- */
+@import "layout/header",
+        /* ----------------- Section: Navigation ----------------------------- */
+        "layout/navigation",
+
+        /* ----------------- Section: Footer --------------------------------- */
+        "layout/footer",
+
+        /* ----------------- Sidebar ----------------------------------------- */
+        "layout/sidebar";
+
+/* ------------------------- Page: Social Media ------------------------------ */
+@import "pages/page-home",
+
+        /* ----------------- Page: FAQ --------------------------------------- */
+        "pages/page-faq",
+
+        /* ----------------- Page: Alumnus ----------------------------------- */
+        "pages/page-alumnus",
+
+        /* ----------------- Page: Partners ---------------------------------- */
+        "pages/page-partners",
+
+        /* ----------------- Page: home -------------------------------------- */
+        "pages/page-mass-media",
+
+        /* ----------------- Page: Support ----------------------------------- */
+        "pages/page-support",
+
+        /* ----------------- Page: NOT-FOUND --------------------------------- */
+        "pages/page-not-found";
+
+/* ------------------------- Part: Single ------------------------------------ */
+@import "layout/single";
+
+/* ------------------------ Components: Project-lightbox --------------------- */
+@import "components/project-lightbox",
+
+        /* ---------------- Components: Events ------------------------------- */
+        "components/events",
+
+        /* ---------------- Components: Map ---------------------------------- */
+        "components/map",
+
+        /* ---------------- Components: FB Plugin ---------------------------- */
+        "components/eff-plugin";

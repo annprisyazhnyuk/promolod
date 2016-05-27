@@ -1,0 +1,106 @@
+/* -------------------------------------- DESCRIPTION ----------------------------------- */
+#description {
+  .container-elastic {
+    overflow: hidden;
+  }
+
+  .home-description {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    font: 300 18px/1.7 'Open Sans', sans-serif;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+/* ------------------------------------- HOME SECTION TITLE ---------------------------- */
+.home-section-title {
+  margin: 50px 0;
+  color: #303030;
+
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+/* ------------------------------------- HOME PROJECTS ------------------------------------ */
+@import "../components/mixin";
+
+.home-projects {
+  margin-bottom: 100px;
+
+ li:nth-child(n+5) {
+      display: none;
+    }
+
+  .load-more,
+  .turn {
+    @include button;
+    @media screen and (min-width: 700px){
+      display: inline-flex;
+      margin-left: 36%;
+    }
+  }
+
+  .turn {
+    display: none;
+  }
+}
+
+/* ------------------------------------ HOME SIDEBAR -------------------------------------- */
+.container-elastic {
+  position: relative;
+
+  #home-sidebar {
+    position: absolute;
+    right: 0;
+
+    margin: 0 auto;
+    width: 28.72881%;
+    padding-top: 0;
+
+    #sidebar {
+      margin-top: 130px;
+      width: 100%;
+    }
+  }
+}
+
+/* ----------------------------------------- HOME EVENTS --------------------------------------- */
+#events {
+  position: relative;
+  z-index: 0;
+
+  .event-load-more,
+  .event-turn {
+    @include button;
+    clear: both;
+  }
+  .event-turn {
+    display: none;
+  }
+}
+
+/* ---------------------------------------- ABOUT ----------------------------------------------- */
+#about {
+  overflow: hidden;
+  #main {
+    margin-bottom: 70px;
+    text-indent: 25px;
+    line-height: 21px;
+    p {
+      margin-bottom: 10px;
+    }
+
+    .insert-page {
+      margin: 70px auto;
+      padding: 30px;
+      background: rgba(225, 214, 214, 0.80);
+      border-radius: 10px;
+    }
+  }
+}
+

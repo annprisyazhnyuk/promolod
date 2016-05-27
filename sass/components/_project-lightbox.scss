@@ -1,0 +1,23 @@
+.single-post {
+  max-width: 800px;
+  margin: 0 auto;
+
+  text-align: center;
+  color: #303030;
+  font-weight: 400;
+  font-family: 'OpenSans', sans-serif;
+
+  .post-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+   p {
+     margin-bottom: 20px;
+     padding: 0 50px;
+     text-align: left;
+   }
+}

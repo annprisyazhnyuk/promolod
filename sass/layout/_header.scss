@@ -1,0 +1,126 @@
+/*----------------------------------- HEADER ------------------------------------------------*/
+.site-header {
+  overflow: hidden;
+  background: rgba(129, 154, 161, 0.75);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px){
+    text-align: left;
+  }
+/*---------------------------------- HEADER LOGO ---------------------------------------------*/
+  .logo-header {
+    max-width: 20%;
+    margin-top: 18px;
+    margin-right: 20px;
+    float: left;
+    img {
+      max-height: 50px;
+      margin: 10px 0;
+    }
+  }
+/*----------------------------------- BUTTON SUPPORT ----------------------------------------*/
+  .support-button {
+    float: left;
+    display: inline-block;
+    max-width:  155px;
+    margin: 27px 0 20px;
+    padding: 0 12px;
+
+    background:  #fe5e31;
+    border: 1px solid #888888;
+    border-radius: 6px;
+
+    line-height: 48px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
+
+    &:hover {
+      background: darken(#FF6754, 10%);
+    }
+
+    @media screen and (min-width: 768px) {
+      float: right;
+    }
+  }
+
+  /*----------------------------------- MENU (NAVIGATION) ----------------------------------------*/
+
+  .menu-menu1-container,
+  .menu-menu2-container {
+    @media screen and (min-width: 768px) {
+      float: left;
+    }
+  }
+
+  #head-menu {
+    overflow: hidden;
+    margin-top: 27px;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    letter-spacing: -4px;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
+
+    .active > a {
+      background: #55D6F5;
+    }
+
+    li {
+      letter-spacing: normal;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+      }
+
+      &:last-of-type a {
+          border: none;
+      }
+
+      a {
+        display: block;
+        padding: 0 10px;
+        border-right: 1px solid #888888;
+        background: #fff;
+
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 48px;
+
+        color: #5B5C5E;
+        text-decoration: none;
+
+        -webkit-transition: background .5s ease;
+        -moz-transition: background .5s ease;
+        -ms-transition: background .5s ease;
+        -o-transition: background .5s ease;
+        transition: background .5s ease;
+        &:hover {
+          background: #55D6F5;
+        }
+
+        @media screen and (min-width: 870px){
+          padding: 0 11px;
+          font-size: 12px;
+        }
+
+        @media screen and (min-width: 975px){
+          padding: 0 15px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .current-menu-item {
+      a {
+        background: #55D6F5;
+      }
+    }
+  }
+}
+
+
+
