@@ -8,7 +8,7 @@
                         class="fa fa-envelope-o"> </span> <?php echo get_theme_mod('mail', ''); ?></a>
             </li>
             <li>
-                <a href="<?php echo get_theme_mod('address-map', ''); ?>"><span
+                <a target="_blank" href="<?php echo get_theme_mod('address-map', ''); ?>"><span
                         class="fa fa-map-marker"> </span> <?php echo get_theme_mod('address', ''); ?></a>
             </li>
         </ul> <!-- ul.contact-info -->
