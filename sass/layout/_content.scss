@@ -23,6 +23,7 @@ img {
 .container-elastic {
   @include container;
   padding: 0 15px;
+  overflow: hidden;
 
 }
 
