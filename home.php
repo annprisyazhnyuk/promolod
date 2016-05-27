@@ -7,34 +7,7 @@
 <?php get_header() ?>
 
 <!--home content -->
-<section id="description">
-	
-	 <?php
-    $banner_image = get_theme_mod('banner_image', '');
-    if (!empty($banner_image)) : ?>
-        <style>
-            #description {
-                background: url(<?php echo $banner_image ?>);
-                background-size: cover;
-                background-attachment: fixed;
-            }
-        </style>
-    <?php endif; ?>
-	
-    <div class="container-elastic">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <h2 class="page-title"> <?php the_title(); ?> </h2>
-            <div class="home-description">
 
-                <?php the_content(); ?>
-            </div>
-
-        <?php endwhile;
-        else :
-            get_template_part('template-parts/content', 'none');
-        endif; ?>
-    </div> <!-- div.container-elastic -->
-</section> <!-- #description -->
 
 
 <!--get projects-->
