@@ -17,7 +17,10 @@
 
     </div> <!-- div.container-elastic -->
 </footer>
+</div> <!-- .overlay -->
 
+
+</section> <!-- #about -->
 </div> <!-- div.container -->
 
 <?php wp_footer(); ?>

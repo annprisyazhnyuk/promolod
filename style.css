@@ -154,7 +154,7 @@ img {
 /*----------------------------------- HEADER ------------------------------------------------*/
 .site-header {
   overflow: hidden;
-  background: rgba(244, 244, 244, 0.41);
+  background: rgba(129, 154, 161, 0.75);
   text-transform: uppercase;
   text-align: center;
   /*---------------------------------- HEADER LOGO ---------------------------------------------*/
@@ -416,7 +416,7 @@ img {
 }
 .site-footer {
   padding: 14px 0;
-  background: #819AA1;
+  background: rgba(129, 154, 161, 0.75);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
@@ -1231,7 +1231,7 @@ form.searchform:after {
   height: 100%;
 }
 .home-events .home-event h2 {
-  width: 100%;
+  width: 95%;
   padding: 15px 7px 0;
   text-transform: uppercase;
   font-size: 1.7em;

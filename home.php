@@ -12,7 +12,7 @@
 <!--get projects-->
 <section id="projects">
     <div class="container-elastic">
-        <!--        <div id="main">-->
+      
         <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?></h3>
         <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
         <ul class="home-projects alm-reveal" id="home-projects">
@@ -41,7 +41,7 @@
             endif; ?>
             <?php wp_reset_query(); ?>
         </ul>
-        <!--        </div>-->
+
 
     </div> <!-- div.container-elastic -->
 </section> <!-- #projects -->
@@ -143,8 +143,7 @@
             </div>
         </div> <!-- div.container-elastic -->
 
-    </div> <!-- .overlay -->
-</section> <!-- #about -->
+
 
 
 <?php get_footer() ?>
