@@ -1,51 +1,41 @@
 <?php
 
-get_header();
-?>
-<?php
-while (have_posts()):
-the_post();
-?>
+get_header(); ?>
 
-<div class="container-elastic">
-    <div class="page-description">
-        <?php the_content(); ?>
-    </div>
-    <?php $partner = new WP_Query(array('post_type' => 'partners')); ?>
 
-    <?php if ($partner->have_posts()) : ?>
+    <div class="container-elastic">
 
 
         <?php $settings = array(
             'taxonomy' => 'type_partners',
+            'orderby' => 'ID',
         );
         $cats = get_categories($settings);
         foreach ($cats as $cat) {
-            echo "<h3 class='type-partners'>" . $cat->cat_name . "</h3>";
-            $catid = $cat->cat_ID;
+
+            echo "<h3 class='type-partners'>" . $cat->cat_name . "</h3>"; ?>
 
 
+            <?php
             $args = array(
                 'post_type' => 'partners',
-                'posts_per_page' => 10,
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'type_partners',
-                        'field' => 'id',
-                        'terms' => $catid
-                    )
+                        'field'    => 'id',
+                        'terms'    => $cat->term_id,
+                    ),
                 )
+
             );
-            $query = new WP_Query($args); ?>
 
-            <ul class="partners">
-
-                <?php while ($partner->have_posts()) : $partner->the_post();
-                    $category = get_the_terms($post->ID, $settings); ?>
+            $partner = new WP_Query( $args );
 
 
-                    <?php
-                    if ($category[0]->term_id == $cat->cat_ID): ?>
+            if ($partner->have_posts()) : ?>
+                <ul class="partners">
+                    <?php while ( $partner->have_posts() ) {
+                        $partner->the_post(); ?>
 
                         <li class="project-alumnus">
 
@@ -60,23 +50,20 @@ the_post();
 
                         </li>
 
-                    <?php endif; ?>
 
-                <?php endwhile; ?>
-            </ul>
+                        <?php ;
+                    }
+                    wp_reset_postdata();
+                    ?>
 
-        <?php } ?>
+                </ul>
+            <?php else :
+                get_template_part('template-parts/content', 'none');
+            endif; ?>
 
-    <?php else:
-        get_template_part('template-parts/content', 'none');
-    endif; ?>
-
-    <?php wp_reset_query(); ?>
-
-
-    <?php endwhile; // End of the loop.
-    ?>
+            <?php
+        } ?>
 
 
-</div><!-- .container-elastic -->
+    </div><!-- .container-elastic -->
 <?php get_footer(); ?>

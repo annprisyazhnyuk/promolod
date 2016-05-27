@@ -85,7 +85,7 @@ img {
 
 :link:hover,
 :visited:hover {
-      color: #55D6F5;
+  color: #55D6F5;
 }
 
 .container-elastic {
@@ -108,8 +108,8 @@ img {
 
 #main {
   overflow: hidden;
-  clear: both;
   margin-bottom: 15px;
+  clear: both;
   font-family: 'Open Sans', sans-serif;
 }
 @media screen and (min-width: 900px) {
@@ -775,7 +775,6 @@ img {
   background: #55D6F5;
   transition: all .5s ease;
 }
-
 .alm-reveal li:nth-child(3n+1) {
   background: #FF6754;
 }
@@ -1306,22 +1305,14 @@ form.searchform:after {
   float: right;
 }
 
-
-#wpsl-search-wrap {
+#google-map {
+  overflow: hidden;
+  position: relative;
+}
+#google-map form.storelocator-filter {
   display: none;
 }
 
-.wpsl-direction-wrap {
-  display: none;
-}
-
-.wpsl-store-location strong {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    display: inline-block;
-    font-weight: 800;
-}
 .widget_ffe_widget {
   height: 1430px;
   overflow-y: scroll;
