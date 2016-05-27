@@ -5,7 +5,7 @@
 .home-events {
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 
   .home-event {
     position: relative;
@@ -28,11 +28,11 @@
 
     @media screen and (min-width: 600px) {
 
-      @include span(4 of 12);
+      @include span(3 of 12);
       margin-bottom: 1.7%;
 
       &:nth-of-type(3n) {
-        @include span(4 of 12 last);
+        @include span(3 of 12 last);
       }
     }
 

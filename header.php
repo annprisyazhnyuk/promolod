@@ -15,25 +15,26 @@
 
 
     <section id="description">
+        <div class="overlay">
+            <?php
+            $banner_image = get_theme_mod('banner_image', '');
+            if (!empty($banner_image)) : ?>
+                <style>
+                    #description {
+                        background: url(<?php echo $banner_image ?>);
+                        background-size: cover;
+                        background-attachment: fixed;
+                    }
+                </style>
+            <?php endif; ?>
 
-        <?php
-        $banner_image = get_theme_mod('banner_image', '');
-        if (!empty($banner_image)) : ?>
-            <style>
-                #description {
-                    background: url(<?php echo $banner_image ?>);
-                    background-size: cover;
-                    background-attachment: fixed;
-                }
-            </style>
-        <?php endif; ?>
 
-
-        <header class="site-header" id='sticker'>
-            <div class="container-elastic">
-                <h1 class="logo-header">
-                    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_theme_mod('image', ''); ?>"/></a>
-                </h1>
+            <header class="site-header" id='sticker'>
+                <div class="container-elastic">
+                    <h1 class="logo-header">
+                        <a href="<?php echo get_site_url(); ?>"><img
+                                src="<?php echo get_theme_mod('image', ''); ?>"/></a>
+                    </h1>
 
                 <span class="lightbox">
                     <a data-fancybox-type="ajax" href="<?php the_permalink(95); ?>"
@@ -41,46 +42,48 @@
                         ?></a>
                 </span>
 
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </div>
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
 
-                <?php if (is_home() || is_front_page()) :
-                    wp_nav_menu(
+                    <?php if (is_home() || is_front_page()) :
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'header',
+                                'menu_id' => 'head-menu',
+                                'container' => 'nav',
+                                'menu' => __('Menu(1)')
+                            ));
+                    else : wp_nav_menu(
                         array(
-                            'theme_location' => 'header',
+                            'theme_location' => 'header-2',
                             'menu_id' => 'head-menu',
-                            'container'     => 'nav',
-                            'menu' => __('Menu(1)')
+                            'container' => 'nav',
+                            'menu' => __('Menu(2)')
                         ));
-                else : wp_nav_menu(
-                    array(
-                        'theme_location' => 'header-2',
-                        'menu_id' => 'head-menu',
-                        'container'     => 'nav',
-                        'menu' => __('Menu(2)')
-                    ));
-                endif;?>
+                    endif; ?>
 
-            </div>
-        </header>
-
-
-        <div class="container-elastic">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <h2 class="page-title"> <?php the_title(); ?> </h2>
-                <div class="home-description">
-
-                    <?php the_content(); ?>
                 </div>
+            </header>
 
-            <?php endwhile;
-            else :
-                get_template_part('template-parts/content', 'none');
-            endif; ?>
-        </div> <!-- div.container-elastic -->
+
+            <div class="container-elastic">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <h2 class="page-title"> <?php the_title(); ?> </h2>
+                    <div class="home-description">
+
+                        <?php the_content(); ?>
+                    </div>
+
+                <?php endwhile;
+                else :
+                    get_template_part('template-parts/content', 'none');
+                endif; ?>
+            </div> <!-- div.container-elastic -->
+
+        </div> <!-- .overlay -->
     </section> <!-- #description -->
 
 

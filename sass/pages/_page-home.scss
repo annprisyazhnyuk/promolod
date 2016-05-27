@@ -1,14 +1,16 @@
 /* -------------------------------------- DESCRIPTION ----------------------------------- */
 #description {
+
   .container-elastic {
     overflow: hidden;
   }
 
   .home-description {
     max-width: 800px;
-    margin: 60px auto;
+    margin: 120px auto;
     text-align: center;
     font: 300 18px/1.7 'Open Sans', sans-serif;
+    color: #fff;
 
     @media screen and (min-width: 768px) {
       font-size: 24px;
@@ -98,8 +100,9 @@
     .insert-page {
       margin: 70px auto;
       padding: 30px;
-      background: rgba(225, 214, 214, 0.80);
+      //background: rgba(225, 214, 214, 0.80);
       border-radius: 10px;
+      color: #fff;
     }
   }
 }

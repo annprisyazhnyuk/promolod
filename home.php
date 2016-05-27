@@ -9,16 +9,15 @@
 <!--home content -->
 
 
-
 <!--get projects-->
 <section id="projects">
     <div class="container-elastic">
-        <div id="main">
-            <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?></h3>
-            <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
-            <ul class="home-projects alm-reveal" id="home-projects">
-                <?php if ($project->have_posts()) : ?>
-                    <?php while ($project->have_posts()) :
+        <!--        <div id="main">-->
+        <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?></h3>
+        <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
+        <ul class="home-projects alm-reveal" id="home-projects">
+            <?php if ($project->have_posts()) : ?>
+                <?php while ($project->have_posts()) :
                     $project->the_post(); ?>
 
                     <li class="lightbox project">
@@ -34,36 +33,37 @@
                     </li>
                 <?php endwhile; ?>
 
-                    <button class="load-more"><?php echo __('Дивитися ще') ?></button>
-                    <button class="turn"><?php echo __('Згорнути') ?></button>
+                <button class="load-more"><?php echo __('Дивитися ще') ?></button>
+                <button class="turn"><?php echo __('Згорнути') ?></button>
 
-                <?php else :
-                    get_template_part('template-parts/content', 'none');
-                endif; ?>
-                <?php wp_reset_query(); ?>
-            </ul>
-        </div>
-   
+            <?php else :
+                get_template_part('template-parts/content', 'none');
+            endif; ?>
+            <?php wp_reset_query(); ?>
+        </ul>
+        <!--        </div>-->
+
     </div> <!-- div.container-elastic -->
 </section> <!-- #projects -->
 
 <!--get events-->
 <section id="events">
-	
-	  <?php
-    $banner_image = get_theme_mod('banner_image', '');
-    if (!empty($banner_image)) : ?>
-        <style>
-            #events {
-                background: url(<?php echo $banner_image ?>);
-                background-size: cover;
-                background-attachment: fixed;
-            }
-        </style>
-    <?php endif; ?>
-    
-    <div class="container-elastic">
-        <div id="main">
+    <div class="overlay">
+
+        <?php
+        $banner_image = get_theme_mod('banner_image', '');
+        if (!empty($banner_image)) : ?>
+            <style>
+                #events {
+                    background: url(<?php echo $banner_image ?>);
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+            </style>
+        <?php endif; ?>
+
+        <div class="container-elastic">
+
             <h3 class="home-section-title"><?php _e('Події', 'promolod') ?></h3>
             <?php $events = new WP_Query(array('post_type' => 'tribe_events')); ?>
             <ul class="home-events">
@@ -110,36 +110,40 @@
                 endif; ?>
                 <?php wp_reset_query(); ?>
             </ul>
-        </div>
-    </div> <!-- div.container-elastic -->
+
+        </div> <!-- div.container-elastic -->
+    </div> <!-- .overlay -->
 </section> <!-- #events -->
 
 <!-- Start Google Map -->
 <section id="google-map">
-   <?php echo do_shortcode(' [wpsl]')?>
+    <?php echo do_shortcode(' [wpsl]') ?>
 </section>
 <!-- End Google Map -->
 
 <section id="about">
-	
-	 <?php
-    $banner_image = get_theme_mod('banner_image', '');
-    if (!empty($banner_image)) : ?>
-        <style>
-            #about {
-                background: url(<?php echo $banner_image ?>);
-                background-size: cover;
-                background-attachment: fixed;
-            }
-        </style>
-    <?php endif; ?>
-	
-    <div class="container-elastic">
-        <div id="main">
-            <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?></h3>
-            <?php echo do_shortcode('[insert page="about" display="content"]') ?>
-        </div>
-    </div> <!-- div.container-elastic -->
+    <div class="overlay">
+
+        <?php
+        $banner_image = get_theme_mod('banner_image', '');
+        if (!empty($banner_image)) : ?>
+            <style>
+                #about {
+                    background: url(<?php echo $banner_image ?>);
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+            </style>
+        <?php endif; ?>
+
+        <div class="container-elastic">
+            <div id="main">
+                <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?></h3>
+                <?php echo do_shortcode('[insert page="about" display="content"]') ?>
+            </div>
+        </div> <!-- div.container-elastic -->
+
+    </div> <!-- .overlay -->
 </section> <!-- #about -->
 
 

@@ -5,6 +5,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_events.scss" afterPath="$PROJECT_DIR$/sass/components/_events.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_content.scss" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_header.scss" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/pages/_page-home.scss" afterPath="$PROJECT_DIR$/sass/pages/_page-home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="GH-promolod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,18 +45,28 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="145" column="24" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="_events.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/components/_events.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_page-home.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/pages/_page-home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -86,7 +102,6 @@
         <option value="$PROJECT_DIR$/sass/layout/_grids.scss" />
         <option value="$PROJECT_DIR$/sass/components/_project-lightbox.scss" />
         <option value="$PROJECT_DIR$/sass/components/_map.scss" />
-        <option value="$PROJECT_DIR$/sass/layout/_content.scss" />
         <option value="$PROJECT_DIR$/sass/layout/_sidebar.scss" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/404.php" />
@@ -98,7 +113,6 @@
         <option value="$PROJECT_DIR$/sass/layout/_footer.scss" />
         <option value="$PROJECT_DIR$/sass/pages/_page-faq.scss" />
         <option value="$PROJECT_DIR$/inc/meta-box.php" />
-        <option value="$PROJECT_DIR$/sass/layout/_header.scss" />
         <option value="$PROJECT_DIR$/pages/page-alumnus.php" />
         <option value="$PROJECT_DIR$/js/collapse.js" />
         <option value="$PROJECT_DIR$/functions.php" />
@@ -107,14 +121,16 @@
         <option value="$PROJECT_DIR$/inc/post-type-registrations.php" />
         <option value="$PROJECT_DIR$/sass/pages/_page-mass-media.scss" />
         <option value="$PROJECT_DIR$/pages/page-mass_media.php" />
-        <option value="$PROJECT_DIR$/sass/components/_events.scss" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/sass/components/_mixin.scss" />
-        <option value="$PROJECT_DIR$/sass/style.scss" />
-        <option value="$PROJECT_DIR$/sass/pages/_page-home.scss" />
         <option value="$PROJECT_DIR$/pages/page-partners.php" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/sass/style.scss" />
+        <option value="$PROJECT_DIR$/sass/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/sass/layout/_content.scss" />
+        <option value="$PROJECT_DIR$/sass/pages/_page-home.scss" />
+        <option value="$PROJECT_DIR$/sass/components/_events.scss" />
       </list>
     </option>
   </component>
@@ -188,6 +204,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GH-promolod" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,12 +345,12 @@
       <option name="presentableId" value="Default" />
       <updated>1458366477581</updated>
       <workItem from="1464350935547" duration="450000" />
-      <workItem from="1464351703808" duration="842000" />
+      <workItem from="1464351703808" duration="2352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1292000" />
+    <option name="totallyTimeSpent" value="2802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -470,20 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/layout/_content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/single-alumnus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -632,30 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/pages/_page-home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_events.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/page-partners.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -666,16 +698,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="145" column="24" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="336">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/pages/_page-home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_events.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>

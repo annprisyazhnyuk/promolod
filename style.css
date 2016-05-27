@@ -123,6 +123,10 @@ img {
   font-family: inherit;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.36);
+}
+
 .page-title {
   margin-top: 40px;
   font-size: 30px;
@@ -150,7 +154,7 @@ img {
 /*----------------------------------- HEADER ------------------------------------------------*/
 .site-header {
   overflow: hidden;
-  background: rgba(129, 154, 161, 0.75);
+  background: rgba(244, 244, 244, 0.41);
   text-transform: uppercase;
   text-align: center;
   /*---------------------------------- HEADER LOGO ---------------------------------------------*/
@@ -534,9 +538,10 @@ img {
 }
 #description .home-description {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 120px auto;
   text-align: center;
   font: 300 18px/1.7 'Open Sans', sans-serif;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   #description .home-description {
@@ -655,8 +660,8 @@ img {
 #about #main .insert-page {
   margin: 70px auto;
   padding: 30px;
-  background: rgba(225, 214, 214, 0.8);
   border-radius: 10px;
+  color: #fff;
 }
 
 .accordion {
@@ -1176,7 +1181,7 @@ form.searchform:after {
 .home-events {
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 .home-events .home-event {
   position: relative;
@@ -1195,13 +1200,13 @@ form.searchform:after {
 }
 @media screen and (min-width: 600px) {
   .home-events .home-event {
-    width: 32.71028%;
+    width: 24.29907%;
     float: left;
     margin-right: 0.93458%;
     margin-bottom: 1.7%;
   }
   .home-events .home-event:nth-of-type(3n) {
-    width: 32.71028%;
+    width: 24.29907%;
     float: right;
     margin-right: 0;
   }
