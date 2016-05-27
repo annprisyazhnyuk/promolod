@@ -673,6 +673,9 @@ img {
   border-radius: 10px;
   color: #fff;
 }
+#about .ssba {
+  display: none;
+}
 
 .accordion {
   max-width: 750px;
