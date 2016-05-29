@@ -417,7 +417,7 @@ img {
 }
 .site-footer {
   padding: 14px 0;
-  background: rgba(129, 154, 161, 0.75);
+  background: #819AA1;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
@@ -534,12 +534,15 @@ img {
 
 /* ------------------------- Page: Social Media ------------------------------ */
 /* -------------------------------------- DESCRIPTION ----------------------------------- */
+#description {
+  background: url("bg-faq.jpg");
+}
 #description .container-elastic {
   overflow: hidden;
 }
 #description .home-description {
-  max-width: 800px;
-  margin: 120px auto;
+  max-width: 700px;
+  margin: 60px 40px 160px;
   text-align: center;
   font: 300 18px/1.7 'Open Sans', sans-serif;
   color: #fff;
@@ -1177,7 +1180,7 @@ form.searchform:after {
 .home-events {
   border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 90px;
+  -bottom: 90px;
 }
 .home-events .home-event {
   position: relative;
@@ -1227,7 +1230,7 @@ form.searchform:after {
   height: 100%;
 }
 .home-events .home-event h2 {
-  width: 95%;
+  width: 100%;
   padding: 15px 7px 0;
   text-transform: uppercase;
   font-size: 1.7em;

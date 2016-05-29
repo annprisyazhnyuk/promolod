@@ -5,7 +5,7 @@
 .home-events {
   border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 90px;
+  -bottom: 90px;
 
   .home-event {
     position: relative;
@@ -58,7 +58,7 @@
     }
 
     h2 {
-      width: 95%;
+      width: 100%;
       padding: 15px 7px 0;
       text-transform: uppercase;
       font-size: 1.7em;
