@@ -21,14 +21,14 @@ get_header(); ?>
                 <?php $question = new WP_Query(array('post_type' => 'faq', 'posts_per_page' => -1)); ?>
                 <?php if ($question->have_posts()) : ?>
                     <div class="accordion">
-                        <ol class="question">
+                        <ul class="question">
                             <?php while ($question->have_posts()) : $question->the_post(); ?>
                                 <li>
                                     <h2 class="question-title"> <?php the_title(); ?> </h2>
                                     <div class="answer"> <?php the_content(); ?> </div>
                                 </li>
                             <?php endwhile; ?>
-                        </ol>
+                        </ul>
                     </div>  <!-- .according -->
                 <?php else :
                     get_template_part('template-parts/content', 'none');
