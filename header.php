@@ -24,7 +24,7 @@
                 if (!empty($banner_image)) : ?>
                     <style>
                         #description {
-                            background: url(<?php echo $banner_image ?>);
+/*                            background: url(*/<?php //echo $banner_image ?>/*);*/
                             background-size: cover;
                             background-attachment: fixed;
                         }

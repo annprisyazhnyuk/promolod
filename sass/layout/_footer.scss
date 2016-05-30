@@ -1,10 +1,11 @@
 .site-footer {
   padding: 14px 0;
-  background: #819AA1;
+  background: rgba(51, 51, 51, 0.772549);
+  //background: #819AA1;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   a {
-    color: #303030;;
+    color: #55D6F5;;
   }
 
   .social-media-icons {
@@ -30,6 +31,7 @@
       a {
         line-height: 2.3;
         font-size: 18px;
+        color: #303030;
       }
     }
   }
@@ -42,6 +44,10 @@
 
       a {
         text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
       }
       .fa {
         margin-right: 5px;
@@ -49,7 +55,7 @@
 
       &:hover {
         .fa {
-          color: #55D6F5;
+          color: #fff;
         }
       }
     }
