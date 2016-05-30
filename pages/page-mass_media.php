@@ -67,9 +67,12 @@ while (have_posts()):
                                 <?php
                                 if (has_post_thumbnail()) :
                                     the_post_thumbnail(array(330, 230));
-                                endif; ?>
+                                endif;
 
-                                    <a href="<?php echo get_post_meta(get_the_ID(), 'address', TRUE); ?>"
+
+                                $meta_value = get_post_meta(get_the_ID(), 'address', true); ?>
+
+                                    <a href="<?php echo $meta_value; ?>"
                                        target="_blank" class="mass-media-title">
                                         <?php the_title(); ?>
                                     </a>

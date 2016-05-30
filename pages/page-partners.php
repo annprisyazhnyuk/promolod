@@ -39,7 +39,7 @@ get_header(); ?>
 
                         <li class="project-alumnus">
 
-                            <a href="<?php echo get_post_meta(get_the_ID(), 'link_partners', TRUE); ?>"
+                            <a href="<?php echo get_post_meta(get_the_ID(), 'partner', TRUE); ?>"
                                target="_blank" class="mass-media-title">
 
                                 <?php if (has_post_thumbnail()) :

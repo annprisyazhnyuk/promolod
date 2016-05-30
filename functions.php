@@ -117,6 +117,10 @@ require get_template_directory() . '/inc/customizer.php';
 /** * 7. Post type registration  */
 require get_template_directory() . '/inc/post-type-registrations.php';
 
+/** * 8. Meta-box registration  */
+require get_template_directory() . '/inc/meta-box.php';
+
+
 
 add_filter( 'page_template', function ( $template )
 {
