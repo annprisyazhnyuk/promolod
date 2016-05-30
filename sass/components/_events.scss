@@ -111,8 +111,8 @@
 
   h1.tribe-events-single-event-title {
     @media screen and (min-width: 768px) {
-      float: left;
-      width: 25%;
+      text-align: center;
+      margin: 40px auto 70px;
     }
 
     margin-bottom: 20px;
@@ -122,19 +122,20 @@
   }
 
   .tribe-events-schedule.tribe-clearfix {
-    @media screen and (min-width: 768px) {
-      float: left;
-      width: 25%;
-      clear: both;
-    }
 
     font-style: italic;
     color: #119595;
     font-size: 20px;
     margin-bottom: 20px;
-    span {
-      display: block;
+
+    h2 {
+      margin-bottom: 40px;
+      text-align: center;
     }
+
+  }
+  .tribe-events-event-image {
+    margin: 40px;
   }
 
   .tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix {
@@ -152,5 +153,9 @@
   .tribe-events-single-event-description.tribe-events-content {
     float: right;
 
+  }
+
+  .ssba.ssba-wrap {
+    margin-top: 40px;
   }
 }

@@ -103,7 +103,7 @@ function my_add_social_sites_customizer($wp_customize)
 	
 	/*-----------------------------------  header IMG customizer ---------------------------------------------*/
         $wp_customize->add_section('promolod_banner_img', array(
-            'title' => __('HEADER IMG', 'promolod'),
+            'title' => __('BACKGROUND IMG', 'promolod'),
             'priority' => 120
         ));
         $wp_customize->add_setting('banner_image', array(
