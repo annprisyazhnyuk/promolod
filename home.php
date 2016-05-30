@@ -12,8 +12,9 @@
 <!--get projects-->
 <section id="projects">
     <div class="container-elastic">
-      
-        <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?></h3>
+
+        <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
+            <span>&#11042;</span></h3>
         <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
         <ul class="home-projects alm-reveal" id="home-projects">
             <?php if ($project->have_posts()) : ?>
@@ -64,7 +65,8 @@
 
         <div class="container-elastic">
 
-            <h3 class="home-section-title"><?php _e('Події', 'promolod') ?></h3>
+            <h3 class="home-section-title"><?php _e('Події', 'promolod') ?>
+                <span>&#11042;</span></h3>
             <?php $events = new WP_Query(array('post_type' => 'tribe_events')); ?>
             <ul class="home-events">
                 <?php if ($events->have_posts()) : ?>
@@ -138,7 +140,8 @@
 
         <div class="container-elastic">
             <div id="main">
-                <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?></h3>
+                <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?>
+                    <span>&#11042;</span></h3>
                 <?php echo do_shortcode('[insert page="about" display="content"]') ?>
             </div>
         </div> <!-- div.container-elastic -->

@@ -155,7 +155,7 @@ img {
 /*----------------------------------- HEADER ------------------------------------------------*/
 .site-header {
   overflow: hidden;
-  background: rgba(129, 154, 161, 0.75);
+  background: rgba(51, 51, 51, 0.77255);
   text-transform: uppercase;
   text-align: center;
   /*---------------------------------- HEADER LOGO ---------------------------------------------*/
@@ -170,7 +170,7 @@ img {
 .site-header .logo-header {
   max-width: 20%;
   margin-top: 18px;
-  margin-right: 20px;
+  margin-right: 40px;
   float: left;
 }
 .site-header .logo-header img {
@@ -183,8 +183,7 @@ img {
   max-width: 155px;
   margin: 27px 0 20px;
   padding: 0 12px;
-  background: #fe5e31;
-  border: 1px solid #888888;
+  background: #6CB31B;
   border-radius: 6px;
   line-height: 48px;
   font-weight: 400;
@@ -192,7 +191,7 @@ img {
   color: #303030;
 }
 .site-header .support-button:hover {
-  background: #ff3a21;
+  background: #518714;
 }
 @media screen and (min-width: 768px) {
   .site-header .support-button {
@@ -208,7 +207,6 @@ img {
 .site-header #head-menu {
   overflow: hidden;
   margin-top: 27px;
-  border: 1px solid #888888;
   border-radius: 6px;
   letter-spacing: -4px;
 }
@@ -417,12 +415,12 @@ img {
 }
 .site-footer {
   padding: 14px 0;
-  background: #819AA1;
+  background: rgba(51, 51, 51, 0.77255);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 .site-footer a {
-  color: #303030;
+  color: #55D6F5;
 }
 .site-footer .social-media-icons li {
   display: inline-block;
@@ -442,6 +440,7 @@ img {
 .site-footer .social-media-icons li a {
   line-height: 2.3;
   font-size: 18px;
+  color: #303030;
 }
 .site-footer .contact-info {
   padding: 14px 0;
@@ -453,11 +452,14 @@ img {
 .site-footer .contact-info li a {
   text-decoration: none;
 }
+.site-footer .contact-info li a:hover {
+  color: #fff;
+}
 .site-footer .contact-info li .fa {
   margin-right: 5px;
 }
 .site-footer .contact-info li:hover .fa {
-  color: #55D6F5;
+  color: #fff;
 }
 @media screen and (min-width: 600px) {
   .site-footer .social-media-icons {
@@ -547,6 +549,10 @@ img {
   font: 300 18px/1.7 'Open Sans', sans-serif;
   color: #fff;
 }
+#description .home-description span {
+  font-size: 34px;
+  font-weight: 400;
+}
 @media screen and (min-width: 768px) {
   #description .home-description {
     font-size: 24px;
@@ -555,12 +561,35 @@ img {
 
 /* ------------------------------------- HOME SECTION TITLE ---------------------------- */
 .home-section-title {
-  margin: 50px 0;
+  position: relative;
+  margin: 100px 0;
   color: #fff;
+  text-align: center;
   font-size: 30px;
   font-weight: 300;
   line-height: 45px;
   text-transform: uppercase;
+}
+.home-section-title ::before,
+.home-section-title ::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 170px;
+  border-bottom: 1px solid #55D6F5;
+  top: 65px;
+}
+.home-section-title ::before {
+  left: 400px;
+}
+.home-section-title ::after {
+  right: 400px;
+}
+.home-section-title span {
+  display: block;
+  font-size: 10px;
+  line-height: 4;
+  color: #55D6F5;
 }
 
 /* ------------------------------------- HOME PROJECTS ------------------------------------ */
@@ -587,7 +616,7 @@ img {
   width: 213px;
   margin: 27px auto;
   padding: 0 12px;
-  background: #FF6754;
+  background: #6CB31B;
   border-radius: 6px;
   border: none;
   color: #303030;
@@ -598,7 +627,7 @@ img {
 }
 .home-projects .load-more:hover,
 .home-projects .turn:hover {
-  background: #ff3a21;
+  background: #518714;
 }
 @media screen and (min-width: 700px) {
   .home-projects .load-more,
@@ -640,7 +669,7 @@ img {
   width: 213px;
   margin: 27px auto;
   padding: 0 12px;
-  background: #FF6754;
+  background: #6CB31B;
   border-radius: 6px;
   border: none;
   color: #303030;
@@ -652,7 +681,7 @@ img {
 }
 #events .event-load-more:hover,
 #events .event-turn:hover {
-  background: #ff3a21;
+  background: #518714;
 }
 #events .event-turn {
   display: none;
@@ -664,8 +693,9 @@ img {
 }
 #about #main {
   margin-bottom: 70px;
-  text-indent: 25px;
-  line-height: 21px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
 }
 #about #main p {
   margin-bottom: 10px;
@@ -1195,7 +1225,7 @@ form.searchform:after {
   display: none;
 }
 .home-events .home-event:nth-child(even) {
-  background: #FF6754;
+  background: #6CB31B;
 }
 @media screen and (min-width: 600px) {
   .home-events .home-event {
