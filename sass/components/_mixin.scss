@@ -1,4 +1,6 @@
 $main_color: #6CB31B;
+$second_color: #55D6F5;
+
 @mixin button {
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@ $main_color: #6CB31B;
   margin: 27px auto;
   padding: 0 12px;
 
-  background: #FF6754;
+  background: $main_color;
   border-radius: 6px;
   border: none;
   color: #303030;
@@ -19,6 +21,6 @@ $main_color: #6CB31B;
   font-weight: 400;
 
   &:hover {
-    background: darken(#FF6754, 10%);
+    background: darken($main_color, 10%);
   }
 }

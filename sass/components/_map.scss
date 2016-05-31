@@ -1,3 +1,5 @@
+@import "../components/mixin";
+
 #google-map {
   overflow: hidden;
   position: relative;
@@ -7,5 +9,21 @@
   }
   #wpsl-wrap {
     margin-bottom: 0;
+  }
+
+  #wpsl-stores {
+    li {
+      padding-left: 30px;
+    }
+  }
+
+
+  .wpsl-store-location {
+    strong {
+      color: $main_color;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
   }
 }

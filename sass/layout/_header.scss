@@ -1,3 +1,5 @@
+@import "../components/mixin";
+
 /*----------------------------------- HEADER ------------------------------------------------*/
 .site-header {
   overflow: hidden;
@@ -30,7 +32,6 @@
     padding: 0 12px;
 
     background:  $main_color;
-    //border: 1px solid #888888;
     border-radius: 6px;
 
     line-height: 48px;
@@ -59,7 +60,6 @@
   #head-menu {
     overflow: hidden;
     margin-top: 27px;
-    //border: 1px solid #888888;
     border-radius: 6px;
     letter-spacing: -4px;
 
@@ -68,7 +68,7 @@
     }
 
     .active > a {
-      background: #55D6F5;
+      background: $second_color;
     }
 
     li {
@@ -101,7 +101,7 @@
         -o-transition: background .5s ease;
         transition: background .5s ease;
         &:hover {
-          background: #55D6F5;
+          background: $second_color;
         }
 
         @media screen and (min-width: 870px){
@@ -118,7 +118,7 @@
 
     .current-menu-item {
       a {
-        background: #55D6F5;
+        background: $second_color;
       }
     }
   }

@@ -70,17 +70,32 @@ while (have_posts()):
                                 endif;
 
 
-                                $meta_value = get_post_meta(get_the_ID(), 'address', true); ?>
+                                $meta_value = get_post_meta(get_the_ID(), 'address', true);
+                                if (!empty($meta_value)) { ?>
 
                                     <a href="<?php echo $meta_value; ?>"
                                        target="_blank" class="mass-media-title">
                                         <?php the_title(); ?>
                                     </a>
+                                <?php } else { ?>
 
-                                    <a href="<?php echo get_post_meta(get_the_ID(), 'address', TRUE); ?>"
+                                    <h3> <?php the_title(); ?></h3>
+
+                                <?php } ?>
+
+
+                                <?php if (!empty($meta_value)) { ?>
+
+                                    <a href="<?php echo $meta_value; ?>"
                                        target="_blank" class="mass-media-title">
                                         <?php the_excerpt(); ?>
                                     </a>
+                                <?php } else { ?>
+
+                                    <h3> <?php the_excerpt(); ?></h3>
+
+                                <?php } ?>
+                                
 
                             </div>
                         </div>

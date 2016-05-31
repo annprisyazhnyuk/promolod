@@ -1,11 +1,12 @@
+@import "../components/mixin";
+
 .site-footer {
   padding: 14px 0;
   background: rgba(51, 51, 51, 0.772549);
-  //background: #819AA1;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   a {
-    color: #55D6F5;;
+    color: $second_color;;
   }
 
   .social-media-icons {
@@ -25,7 +26,7 @@
       text-align: center;
 
       &:hover {
-        background: #55D6F5;
+        background: $second_color;
       }
 
       a {
@@ -36,7 +37,7 @@
     }
   }
   .contact-info {
-    padding: 14px 0;
+    padding: 15px 0 0;
     font-size: 14px;
 
     li {

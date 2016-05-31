@@ -1,3 +1,5 @@
+@import "../components/mixin";
+
 body, html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +19,7 @@ img {
 
 :link:hover,
 :visited:hover {
-  color: #55D6F5;
+  color: $second_color;
 }
 
 .container-elastic {

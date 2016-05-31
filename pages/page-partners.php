@@ -22,24 +22,24 @@ get_header(); ?>
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'type_partners',
-                        'field'    => 'id',
-                        'terms'    => $cat->term_id,
+                        'field' => 'id',
+                        'terms' => $cat->term_id,
                     ),
                 )
 
             );
 
-            $partner = new WP_Query( $args );
+            $partner = new WP_Query($args);
 
 
             if ($partner->have_posts()) : ?>
                 <ul class="partners">
-                    <?php while ( $partner->have_posts() ) {
+                    <?php while ($partner->have_posts()) {
                         $partner->the_post(); ?>
 
                         <li class="project-alumnus">
-
-                            <a href="<?php echo get_post_meta(get_the_ID(), 'partner', TRUE); ?>"
+                            <?php $link_partners = get_post_meta(get_the_ID(), 'partner', TRUE); ?>
+                            <a href="<?php echo $link_partners; ?>"
                                target="_blank" class="mass-media-title">
 
                                 <?php if (has_post_thumbnail()) :

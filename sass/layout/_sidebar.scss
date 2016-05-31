@@ -1,3 +1,6 @@
+@import "../components/mixin";
+
+
 #sidebar {
   @media screen and (max-width: 899px) {
     display: none;
@@ -42,6 +45,6 @@
     content: ' :';
     font-size: 30px;
     font-weight: 700;
-    color: #55D6F5;
+    color: $second_color;
   }
 }

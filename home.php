@@ -11,7 +11,6 @@
 
 <!--get projects-->
 <section id="projects">
-    <div class="container-elastic">
 
         <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
             <span>&#11042;</span></h3>
@@ -44,7 +43,6 @@
         </ul>
 
 
-    </div> <!-- div.container-elastic -->
 </section> <!-- #projects -->
 
 <!--get events-->
@@ -139,11 +137,11 @@
         <?php endif; ?>
 
         <div class="container-elastic">
-            <div id="main">
+
                 <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?>
                     <span>&#11042;</span></h3>
                 <?php echo do_shortcode('[insert page="about" display="content"]') ?>
-            </div>
+
         </div> <!-- div.container-elastic -->
 
 
