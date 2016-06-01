@@ -15,7 +15,7 @@
     <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
         <span>&#11042;</span></h3>
     <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
-    <ul class="home-projects " id="home-projects">
+    <ul class="home-projects" id="home-projects">
         <?php if ($project->have_posts()) : ?>
             <?php while ($project->have_posts()) :
                 $project->the_post(); ?>
@@ -80,7 +80,15 @@
                                 endif; ?>
 
                                 <div class="overlay">
-                                    <h2> <?php the_title(); ?> </h2>
+                                    
+                                    <h2> <?php /* cut title for events */
+                                        $thetitle = $post->post_title;
+                                        $getlength = strlen($thetitle);
+                                        $thelength = 64;
+                                        echo substr($thetitle, 0, $thelength);
+                                        if ($getlength > $thelength) echo "...";
+
+                                        ?></h2>
 
                                     <?php do_action('tribe_events_before_the_meta') ?>
                                     <div class="tribe-events-event-meta">
@@ -148,5 +156,5 @@
                 </div>
             </div> <!-- div.container-elastic -->
 
-<!-- End section About -->
+            <!-- End section About -->
             <?php get_footer() ?>

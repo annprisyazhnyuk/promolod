@@ -131,7 +131,8 @@ add_filter( 'page_template', function ( $template )
         return $template = $alternative_template;
     return $template;
 });
-?>
+
+
 
 
 

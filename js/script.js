@@ -74,7 +74,7 @@ $(document).ready(function () {
         $('.event-turn').css('display', 'flex');
     });
     $('.event-turn').click(function() {
-        $('.home-event:nth-child(n+7)').hide('fast');
+        $('.home-event:nth-child(n+9)').hide('fast');
         $(this).css('display', 'none');
         $(".event-load-more").css('display', 'flex');
     })

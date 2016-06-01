@@ -20,7 +20,7 @@
     text-align: center;
     transition: all .5s ease;
 
-    &:nth-child(n+7) {
+    &:nth-child(n+9) {
       display: none;
     }
 
@@ -161,6 +161,9 @@
   .tribe-events-single-event-description.tribe-events-content {
     float: right;
 
+    p {
+      margin: 0 40px 20px;
+    }
   }
 
   .ssba.ssba-wrap {

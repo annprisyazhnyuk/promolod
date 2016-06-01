@@ -1379,7 +1379,7 @@ form.searchform:after {
   text-align: center;
   transition: all .5s ease;
 }
-.home-events .home-event:nth-child(n+7) {
+.home-events .home-event:nth-child(n+9) {
   display: none;
 }
 .home-events .home-event:nth-child(even) {
@@ -1504,6 +1504,9 @@ form.searchform:after {
 }
 #tribe-events-pg-template .tribe-events-single-event-description.tribe-events-content {
   float: right;
+}
+#tribe-events-pg-template .tribe-events-single-event-description.tribe-events-content p {
+  margin: 0 40px 20px;
 }
 #tribe-events-pg-template .ssba.ssba-wrap {
   margin-top: 40px;
