@@ -20,7 +20,7 @@
 </div> <!-- .overlay -->
 
 
-</section> <!-- #about -->
+</section> <!-- #google-map -->
 </div> <!-- div.container -->
 
 <?php wp_footer(); ?>

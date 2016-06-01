@@ -19,6 +19,7 @@ $second_color: #55D6F5;
   text-transform: uppercase;
   line-height: 48px;
   font-weight: 400;
+  cursor: pointer;
 
   &:hover {
     background: darken($main_color, 10%);

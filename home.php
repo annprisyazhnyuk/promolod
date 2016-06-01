@@ -12,35 +12,35 @@
 <!--get projects-->
 <section id="projects">
 
-        <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
-            <span>&#11042;</span></h3>
-        <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
-        <ul class="home-projects alm-reveal" id="home-projects">
-            <?php if ($project->have_posts()) : ?>
-                <?php while ($project->have_posts()) :
-                    $project->the_post(); ?>
+    <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
+        <span>&#11042;</span></h3>
+    <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
+    <ul class="home-projects alm-reveal" id="home-projects">
+        <?php if ($project->have_posts()) : ?>
+            <?php while ($project->have_posts()) :
+                $project->the_post(); ?>
 
-                    <li class="lightbox project">
-                        <a data-fancybox-type="ajax" href="<?php the_permalink(); ?>">
-                            <?php if (has_post_thumbnail()) :
-                                the_post_thumbnail();
-                            endif; ?>
-                            <div class="rollover">
-                                <h2> <?php the_title(); ?> </h2>
-                                <?php the_excerpt(); ?>
-                            </div>
-                        </a>
-                    </li>
-                <?php endwhile; ?>
+                <li class="lightbox project">
+                    <a data-fancybox-type="ajax" href="<?php the_permalink(); ?>">
+                        <?php if (has_post_thumbnail()) :
+                            the_post_thumbnail();
+                        endif; ?>
+                        <div class="rollover">
+                            <h2> <?php the_title(); ?> </h2>
+                            <?php the_excerpt(); ?>
+                        </div>
+                    </a>
+                </li>
+            <?php endwhile; ?>
 
-                <button class="load-more"><?php echo __('Дивитися ще') ?></button>
-                <button class="turn"><?php echo __('Згорнути') ?></button>
+            <button class="load-more"><?php echo __('Дивитися ще') ?></button>
+            <button class="turn"><?php echo __('Згорнути') ?></button>
 
-            <?php else :
-                get_template_part('template-parts/content', 'none');
-            endif; ?>
-            <?php wp_reset_query(); ?>
-        </ul>
+        <?php else :
+            get_template_part('template-parts/content', 'none');
+        endif; ?>
+        <?php wp_reset_query(); ?>
+    </ul>
 
 
 </section> <!-- #projects -->
@@ -117,38 +117,34 @@
 
 <!-- Start Google Map -->
 <section id="google-map">
-    <?php echo do_shortcode(' [wpsl]') ?>
-</section>
-<!-- End Google Map -->
-
-<section id="about">
     <div class="overlay">
-
         <?php
         $banner_image = get_theme_mod('banner_image', '');
         if (!empty($banner_image)) : ?>
             <style>
-                #about {
+                #google-map {
                     background: url(<?php echo $banner_image ?>);
                     background-size: cover;
                     background-attachment: fixed;
                 }
             </style>
         <?php endif; ?>
+        <?php echo do_shortcode(' [wpsl]') ?>
 
-        <div class="container-elastic">
+        <!-- End Google Map -->
+
+
+        <div id="about">
+
+            <div class="container-elastic">
 
                 <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?>
                     <span>&#11042;</span></h3>
                 <?php echo do_shortcode('[insert page="about" display="content"]') ?>
-            <div class="contact-form">
+                <div class="contact-form">
+                    <?php echo do_shortcode('[contact-form-7 id="328" title="Контактна форма 1"]'); ?>
+                </div>
+            </div> <!-- div.container-elastic -->
 
-                <?php echo do_shortcode('[contact-form-7 id="328" title="Контактна форма 1"]'); ?>
-            </div>
-
-        </div> <!-- div.container-elastic -->
-
-
-
-
-<?php get_footer() ?>
+<!-- End section About -->
+            <?php get_footer() ?>

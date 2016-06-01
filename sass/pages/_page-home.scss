@@ -64,30 +64,6 @@
 
 /* ------------------------------------- HOME PROJECTS ------------------------------------ */
 
-@mixin button {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-
-  width: 213px;
-  margin: 27px auto;
-  padding: 0 12px;
-
-  background: $main_color;
-  border-radius: 6px;
-  border: none;
-  color: #303030;
-
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 48px;
-  font-weight: 400;
-
-  &:hover {
-    background: darken($main_color, 10%);
-  }
-}
-
 #projects {
   .home-section-title {
     color: #303030;
@@ -137,6 +113,7 @@
   .event-load-more,
   .event-turn {
     @include button;
+    cursor: pointer;
     clear: both;
   }
   .event-turn {

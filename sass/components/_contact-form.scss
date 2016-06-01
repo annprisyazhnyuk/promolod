@@ -52,7 +52,7 @@
     padding: 10px 15px;
 
     border: 2px solid $main_color;
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: $main_color;
     color: #fff;
 
@@ -62,7 +62,12 @@
     text-transform: uppercase;
 
     cursor: pointer;
-    transition: all 0.8s;
+    transition: all 0.5s;
+
+    &:hover {
+      background: darken($main_color, 10%);
+      border: 2px solid darken($main_color, 10%);
+    }
   }
 
   ::-webkit-input-placeholder  {

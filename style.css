@@ -628,6 +628,7 @@ img {
   text-transform: uppercase;
   line-height: 48px;
   font-weight: 400;
+  cursor: pointer;
 }
 .home-projects .load-more:hover,
 .home-projects .turn:hover {
@@ -665,6 +666,8 @@ img {
   text-transform: uppercase;
   line-height: 48px;
   font-weight: 400;
+  cursor: pointer;
+  cursor: pointer;
   clear: both;
 }
 #events .event-load-more:hover,
@@ -875,6 +878,7 @@ img {
   text-transform: uppercase;
   line-height: 48px;
   font-weight: 400;
+  cursor: pointer;
 }
 @media screen and (min-width: 700px) {
   #load-more {
@@ -1346,11 +1350,19 @@ form.searchform:after {
 #google-map #wpsl-wrap {
   margin-bottom: 0;
 }
+#google-map #wpsl-wrap #wpsl-gmap {
+  width: 80%;
+}
+#google-map #wpsl-stores {
+  background: rgba(48, 48, 48, 0.68);
+}
 #google-map #wpsl-stores li {
   padding-left: 30px;
+  border-bottom: 1px solid #303030;
+  color: #dcdee3;
 }
 #google-map .wpsl-store-location strong {
-  color: #6CB31B;
+  color: #55D6F5;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1457,7 +1469,7 @@ a {
   margin-right: 14px;
   padding: 10px 15px;
   border: 2px solid #6CB31B;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #6CB31B;
   color: #fff;
   font-size: 15px;
@@ -1465,7 +1477,11 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.8s;
+  transition: all 0.5s;
+}
+.contact-form input[type="submit"]:hover {
+  background: #518714;
+  border: 2px solid #518714;
 }
 .contact-form ::-webkit-input-placeholder {
   color: #fff;
