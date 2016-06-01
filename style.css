@@ -1540,6 +1540,9 @@ form.searchform:after {
   border-bottom: 1px solid #303030;
   color: #dcdee3;
 }
+#google-map #wpsl-stores .wpsl-direction-wrap {
+  display: none;
+}
 #google-map .wpsl-store-location strong {
   color: #55D6F5;
   font-size: 20px;
@@ -1672,4 +1675,7 @@ a {
 .contact-form ::-webkit-input-placeholder {
   color: #fff;
   font-size: 15px;
+}
+.contact-form .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  color: #fff;
 }
