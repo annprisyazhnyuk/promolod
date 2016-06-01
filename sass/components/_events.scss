@@ -29,12 +29,20 @@
       background: $main_color;
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 600px) and (max-width: 959px) {
+      @include span(6 of 12);
+
+      &:nth-of-type(even) {
+        @include span(6 of 12 last);
+      }
+    }
+
+    @media screen and (min-width: 960px) {
 
       @include span(3 of 12);
       margin-bottom: 1.7%;
 
-      &:nth-of-type(3n) {
+      &:nth-of-type(4n) {
         @include span(3 of 12 last);
       }
     }

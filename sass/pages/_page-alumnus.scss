@@ -52,44 +52,14 @@
         transform: scale(1.1);
       }
     }
+
     .rollover {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
+      @include rollover;
 
-      background: rgba(#000, .3);
-      box-sizing: border-box;
-      color: #fff;
-
-      opacity: 0;
-      transition: all .5s ease;
-      h2 {
-        padding: 20px;
-        font-size: 30px;
-        font-weight: 300;
-        text-align:left;
-
-        a {
-          text-decoration: none;
-          color: inherit;
-          text-transform: uppercase;
-        }
-      }
       p {
         position: absolute;
         bottom: 0;
         left: 0;
-
-        padding: 0 30px 25px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-
-      }
-      &:hover {
-        opacity: 1;
-        transition: all .5s ease;
       }
     }
   }
@@ -104,7 +74,7 @@
   margin: 27px auto;
   padding: 0 12px;
 
-  background: $main_color ;
+  background: $main_color;
   border-radius: 6px;
   border: none;
   color: #fff;
@@ -115,8 +85,7 @@
   font-weight: 400;
   cursor: pointer;
 
-
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 700px) {
     display: inline-flex;
     margin-left: 36%;
   }

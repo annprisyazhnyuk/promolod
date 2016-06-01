@@ -29,7 +29,7 @@
 /* ------------------------------------- HOME SECTION TITLE ---------------------------- */
 .home-section-title {
   position: relative;
-  margin: 100px 0;
+  margin: 50px 0;
   color: #fff;
   text-align: center;
 
@@ -37,6 +37,10 @@
   font-weight: 300;
   line-height: 45px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 600px) {
+    margin: 100px 0;
+  }
 
   ::before,
   ::after {
@@ -48,11 +52,27 @@
     top: 65px;
   }
   ::before {
-    left: 400px;
+    left: 175px;
+
+    @media screen and (min-width: 600px) {
+      left: 330px;
+    }
+
+    @media screen and (min-width: 800px) {
+      left: 400px;
+    }
   }
 
   ::after {
-    right: 400px;
+    right: 175px;
+
+    @media screen and (min-width: 600px) {
+      right: 330px;
+    }
+
+    @media screen and (min-width: 800px) {
+      right: 400px;
+    }
   }
   span {
     display: block;
@@ -71,21 +91,101 @@
     color: #303030;
 
     ::before {
-      left: 445px;
+      @media screen and (min-width: 600px) {
+        left: 345px;
+      }
+      @media screen and (min-width: 800px) {
+        left: 445px;
+      }
     }
     ::after {
-      right: 445px;
+      @media screen and (min-width: 600px) {
+        right: 345px;
+      }
+      @media screen and (min-width: 800px) {
+        right: 445px;
+      }
     }
   }
 }
 
 .home-projects {
   margin-bottom: 100px;
+  border-radius: 10px;
+  overflow: hidden;
 
   .project {
-    height: 500px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    height: 300px;
+    min-width: 50%;
+    width: 100%;
+
+
     -webkit-filter: contrast(150%) sepia(30%);
     filter: contrast(150%) sepia(30%);
+
+
+    @media screen and (min-width: 480px) {
+      height: 350px;
+    }
+
+    @media screen and (min-width: 600px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 500px;
+
+      h2 {
+        font-size: 37px;
+      }
+
+      p {
+        font-size: 23px;
+        line-height: 1.2;
+      }
+    }
+
+
+    img {
+      height: 100%;
+      width: 100%;
+      transition: all .6s ease;
+    }
+
+    &:hover {
+      transition: all .6s ease;
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+
+    .rollover {
+      @include rollover;
+
+      .rollover-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      @media screen and (min-width: 768px) {
+
+        h2 {
+          font-size: 37px;
+        }
+
+        p {
+          font-size: 23px;
+          line-height: 1.2;
+        }
+      }
+
+    }
   }
 
   li:nth-child(n+5) {
@@ -105,7 +205,6 @@
     display: none;
   }
 }
-
 
 /* ----------------------------------------- HOME EVENTS --------------------------------------- */
 #events {
@@ -138,21 +237,26 @@
   }
 
   .insert-page {
-    width: 48%;
-    float: left;
-    padding-top: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 860px) {
+      text-align: left;
+      width: 48%;
+      float: left;
+      padding: 60px 0;
+    }
 
     color: #fff;
     text-indent: 15px;
 
-   ul {
-     margin-top: 20px;
+    ul {
+      margin-top: 20px;
 
-     li {
-       margin-top: 10px;
-       text-indent: 0;
-     }
-   }
+      li {
+        margin-top: 10px;
+        text-indent: 0;
+      }
+    }
   }
 
   .ssba {

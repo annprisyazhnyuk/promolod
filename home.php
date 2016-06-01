@@ -15,7 +15,7 @@
     <h3 class="home-section-title"><?php _e('Проекти', 'promolod') ?>
         <span>&#11042;</span></h3>
     <?php $project = new WP_Query(array('post_type' => 'projects')); ?>
-    <ul class="home-projects alm-reveal" id="home-projects">
+    <ul class="home-projects " id="home-projects">
         <?php if ($project->have_posts()) : ?>
             <?php while ($project->have_posts()) :
                 $project->the_post(); ?>
@@ -26,8 +26,10 @@
                             the_post_thumbnail();
                         endif; ?>
                         <div class="rollover">
-                            <h2> <?php the_title(); ?> </h2>
-                            <?php the_excerpt(); ?>
+                            <div class="rollover-container">
+                                <h2> <?php the_title(); ?> </h2>
+                                <?php the_excerpt(); ?>
+                            </div>
                         </div>
                     </a>
                 </li>
