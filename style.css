@@ -183,15 +183,15 @@ img {
   max-width: 155px;
   margin: 27px 0 20px;
   padding: 0 12px;
-  background: #6CB31B;
+  background: #fe5e31;
+  color: #eeeeee;
+  font-weight: 600;
   border-radius: 6px;
   line-height: 48px;
-  font-weight: 400;
   font-size: 14px;
-  color: #303030;
 }
 .site-header .support-button:hover {
-  background: #518714;
+  background: #fb3801;
 }
 @media screen and (min-width: 768px) {
   .site-header .support-button {
@@ -591,6 +591,9 @@ img {
 }
 
 /* ------------------------------------- HOME PROJECTS ------------------------------------ */
+#projects {
+  overflow: hidden;
+}
 #projects .home-section-title {
   color: #303030;
 }
@@ -623,7 +626,7 @@ img {
   background: #6CB31B;
   border-radius: 6px;
   border: none;
-  color: #303030;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 48px;
@@ -661,7 +664,7 @@ img {
   background: #6CB31B;
   border-radius: 6px;
   border: none;
-  color: #303030;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 48px;
@@ -873,7 +876,7 @@ img {
   background: #6CB31B;
   border-radius: 6px;
   border: none;
-  color: #303030;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 48px;
@@ -1025,9 +1028,9 @@ img {
 .mass-media .date-publication-mass-media .media-date .date-month {
   display: block;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
-  color: #55D6F5;
+  color: #18849E;
 }
 .mass-media .date-publication-mass-media .content-mass-media {
   width: 50%;
