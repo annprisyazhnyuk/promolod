@@ -169,7 +169,7 @@ img {
 }
 .site-header .logo-header {
   max-width: 20%;
-  margin-top: 18px;
+  margin-top: 13px;
   margin-right: 40px;
   float: left;
 }
@@ -216,7 +216,7 @@ img {
   }
 }
 .site-header #head-menu .active > a {
-  background: #55D6F5;
+  color: #55D6F5;
 }
 .site-header #head-menu li {
   letter-spacing: normal;
@@ -231,22 +231,20 @@ img {
 }
 .site-header #head-menu li a {
   display: block;
-  padding: 0 10px;
-  border-right: 1px solid #888888;
-  background: #fff;
+  padding: 10px;
   font-size: 10px;
   font-weight: 600;
   line-height: 48px;
-  color: #5B5C5E;
+  color: #fff;
   text-decoration: none;
-  -webkit-transition: background .5s ease;
-  -moz-transition: background .5s ease;
-  -ms-transition: background .5s ease;
-  -o-transition: background .5s ease;
-  transition: background .5s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
 }
 .site-header #head-menu li a:hover {
-  background: #55D6F5;
+  color: #55D6F5;
 }
 @media screen and (min-width: 870px) {
   .site-header #head-menu li a {
@@ -261,7 +259,7 @@ img {
   }
 }
 .site-header #head-menu .current-menu-item a {
-  background: #55D6F5;
+  color: #55D6F5;
 }
 
 /*-------------------------------------NAVIGATION------------------------------*/
@@ -596,6 +594,12 @@ img {
 #projects .home-section-title {
   color: #303030;
 }
+#projects .home-section-title ::before {
+  left: 445px;
+}
+#projects .home-section-title ::after {
+  right: 445px;
+}
 
 .home-projects {
   margin-bottom: 100px;
@@ -640,22 +644,6 @@ img {
   display: none;
 }
 
-/* ------------------------------------ HOME SIDEBAR -------------------------------------- */
-.container-elastic {
-  position: relative;
-}
-.container-elastic #home-sidebar {
-  position: absolute;
-  right: 0;
-  margin: 0 auto;
-  width: 28.72881%;
-  padding-top: 0;
-}
-.container-elastic #home-sidebar #sidebar {
-  margin-top: 130px;
-  width: 100%;
-}
-
 /* ----------------------------------------- HOME EVENTS --------------------------------------- */
 #events {
   position: relative;
@@ -694,13 +682,25 @@ img {
   font-weight: 300;
   line-height: 1.2;
 }
+#about .home-section-title {
+  margin-bottom: 50px;
+}
 #about p {
   margin-bottom: 10px;
 }
 #about .insert-page {
-  margin: 70px auto;
-  padding: 30px;
+  width: 48%;
+  float: left;
+  padding-top: 60px;
   color: #fff;
+  text-indent: 15px;
+}
+#about .insert-page ul {
+  margin-top: 20px;
+}
+#about .insert-page ul li {
+  margin-top: 10px;
+  text-indent: 0;
 }
 #about .ssba {
   display: none;
@@ -836,7 +836,7 @@ img {
   transition: all .5s ease;
 }
 .alm-reveal li .rollover h2 {
-  padding: 10px;
+  padding: 20px;
   font-size: 30px;
   font-weight: 300;
   text-align: left;
@@ -850,9 +850,10 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0 20px 15px;
+  padding: 0 30px 25px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
 }
 .alm-reveal li .rollover:hover {
   opacity: 1;
@@ -1412,4 +1413,61 @@ form.searchform:after {
 
 a {
   color: #55D6F5;
+}
+
+.contact-form {
+  float: right;
+  width: 48%;
+  margin-bottom: 100px;
+}
+.contact-form p {
+  margin: 0;
+}
+.contact-form .form-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 97%;
+  padding: 15px;
+  margin-top: 7px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-form textarea {
+  width: 97%;
+  padding: 15px;
+  margin-top: 7px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  resize: none;
+}
+.contact-form input[type="submit"] {
+  margin-right: 14px;
+  padding: 10px 15px;
+  border: 2px solid #6CB31B;
+  border-radius: 10px;
+  background-color: #6CB31B;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.contact-form ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 15px;
 }

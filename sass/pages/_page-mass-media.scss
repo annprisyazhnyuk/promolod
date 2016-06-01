@@ -1,9 +1,11 @@
+@import "../components/mixin";
+
 .mass-media {
   overflow: hidden;
   margin-bottom: 40px;
   color: #303030;
 
-  li {  
+  li {
     overflow: hidden;
     margin-bottom: 50px;
   }
@@ -53,7 +55,7 @@
         font-size: 14px;
         font-weight: 400;
         text-align: center;
-        color: #55D6F5;
+        color: $second_color;
       }
     }
 

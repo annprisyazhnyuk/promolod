@@ -141,6 +141,10 @@
                 <h3 class="home-section-title"><?php _e('Про нас', 'promolod') ?>
                     <span>&#11042;</span></h3>
                 <?php echo do_shortcode('[insert page="about" display="content"]') ?>
+            <div class="contact-form">
+
+                <?php echo do_shortcode('[contact-form-7 id="328" title="Контактна форма 1"]'); ?>
+            </div>
 
         </div> <!-- div.container-elastic -->
 

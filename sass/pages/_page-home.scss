@@ -91,6 +91,13 @@
 #projects {
   .home-section-title {
     color: #303030;
+
+    ::before {
+      left: 445px;
+    }
+    ::after {
+      right: 445px;
+    }
   }
 }
 
@@ -121,24 +128,6 @@
   }
 }
 
-/* ------------------------------------ HOME SIDEBAR -------------------------------------- */
-.container-elastic {
-  position: relative;
-
-  #home-sidebar {
-    position: absolute;
-    right: 0;
-
-    margin: 0 auto;
-    width: 28.72881%;
-    padding-top: 0;
-
-    #sidebar {
-      margin-top: 130px;
-      width: 100%;
-    }
-  }
-}
 
 /* ----------------------------------------- HOME EVENTS --------------------------------------- */
 #events {
@@ -161,14 +150,30 @@
   font-size: 22px;
   font-weight: 300;
   line-height: 1.2;
+
+  .home-section-title {
+    margin-bottom: 50px;
+  }
   p {
     margin-bottom: 10px;
   }
 
   .insert-page {
-    margin: 70px auto;
-    padding: 30px;
+    width: 48%;
+    float: left;
+    padding-top: 60px;
+
     color: #fff;
+    text-indent: 15px;
+
+   ul {
+     margin-top: 20px;
+
+     li {
+       margin-top: 10px;
+       text-indent: 0;
+     }
+   }
   }
 
   .ssba {
