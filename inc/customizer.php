@@ -101,7 +101,7 @@ function my_add_social_sites_customizer($wp_customize)
         'priority' => 1
     )));
 	
-	/*-----------------------------------  header IMG customizer ---------------------------------------------*/
+	/*-----------------------------------  background IMG customizer ---------------------------------------------*/
         $wp_customize->add_section('promolod_banner_img', array(
             'title' => __('BACKGROUND IMG', 'promolod'),
             'priority' => 120
@@ -111,11 +111,28 @@ function my_add_social_sites_customizer($wp_customize)
             'transport' => 'refresh'
         ));
         $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'promolod_banner_img_control', array(
-            'label' => __('IMG for header banner', 'promolod'),
+            'label' => __('IMG for background', 'promolod'),
             'section' => 'promolod_banner_img',
             'settings' => 'banner_image',
             'priority' => 1
         )));
+
+
+    /*-----------------------------------  header IMG customizer ---------------------------------------------*/
+    $wp_customize->add_section('promolod_banner_img_header', array(
+        'title' => __('HEADER IMG', 'promolod'),
+        'priority' => 120
+    ));
+    $wp_customize->add_setting('banner_image_header', array(
+        'default' => 'none',
+        'transport' => 'refresh'
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'promolod_header_img_control', array(
+        'label' => __('IMG for header banner', 'promolod'),
+        'section' => 'promolod_banner_img_header',
+        'settings' => 'banner_image_header',
+        'priority' => 1
+    )));
 }
 
 /* -------------------------------------------- Social icons function ---------------------- */

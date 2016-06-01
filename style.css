@@ -536,9 +536,6 @@ img {
 
 /* ------------------------- Page: Social Media ------------------------------ */
 /* -------------------------------------- DESCRIPTION ----------------------------------- */
-#description {
-  background: url("bg-faq.jpg");
-}
 #description .container-elastic {
   overflow: hidden;
 }

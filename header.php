@@ -20,11 +20,11 @@
         <section id="description">
             <div class="overlay">
                 <?php
-                $banner_image = get_theme_mod('banner_image', '');
+                $banner_image = get_theme_mod('banner_image_header', '');
                 if (!empty($banner_image)) : ?>
                     <style>
                         #description {
-/*                            background: url(*/<?php //echo $banner_image ?>/*);*/
+                            background: url(<?php echo $banner_image ?>);
                             background-size: cover;
                             background-attachment: fixed;
                         }
