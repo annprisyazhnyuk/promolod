@@ -107,6 +107,13 @@
 #tribe-events-pg-template {
   max-width: 780px;
   overflow: hidden;
+  line-height: 1.5;
+.tribe-events-event-image {
+  text-align: center;
+  img {
+    width: 50%;
+  }
+}
   #tribe-events {
     .tribe-events-ajax-loading {
       display: none;

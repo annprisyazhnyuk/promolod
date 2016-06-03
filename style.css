@@ -745,6 +745,7 @@ img {
   .home-projects .project .rollover p {
     font-size: 23px;
     line-height: 1.2;
+    font-weight: 300;
   }
 }
 .home-projects li:nth-child(n+5) {
@@ -1337,6 +1338,7 @@ form.searchform:after {
 .single-content p {
   max-width: 750px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 /* ------------------------ Components: Project-lightbox --------------------- */
@@ -1359,6 +1361,7 @@ form.searchform:after {
   margin-bottom: 20px;
   padding: 0 50px;
   text-align: left;
+  line-height: 1.5;
 }
 
 .events {
@@ -1460,6 +1463,13 @@ form.searchform:after {
 #tribe-events-pg-template {
   max-width: 780px;
   overflow: hidden;
+  line-height: 1.5;
+}
+#tribe-events-pg-template .tribe-events-event-image {
+  text-align: center;
+}
+#tribe-events-pg-template .tribe-events-event-image img {
+  width: 50%;
 }
 #tribe-events-pg-template #tribe-events .tribe-events-ajax-loading {
   display: none;
