@@ -139,3 +139,23 @@ function promolod_project_projects()
     ));
 }
 
+/* -------------------------------- 7.6 REPORTS post type registration ------------------------ */
+add_action('init', 'promolod_report');
+function promolod_report()
+{
+    register_post_type('report', array(
+        'public' => true,
+        'supports' => array(
+            'title',
+            'thumbnail',
+            'editor'
+        ),
+        'labels' => array(
+            'name' => __('Звіти'),
+            'promolod',
+            'add_new' => 'Додати ще',
+            'all_items' => 'Всi звіти'
+        )
+
+    ));
+}

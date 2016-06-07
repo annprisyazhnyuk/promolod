@@ -133,7 +133,14 @@ add_filter( 'page_template', function ( $template )
 });
 
 
+function custom_excerpt_length() {
+    return 35;
+}
 
+add_filter('excerpt_length', 'custom_excerpt_length');
+add_filter('excerpt_more', function ($more) {
+    return '...';
+});
 
 
 
