@@ -66,7 +66,7 @@
         <div class="container-elastic">
 
             <?php
-            if (!empty(get_theme_mod('section_title'))) {
+            if ((get_theme_mod('section_title')) != false) {
                 ?>
                 <h3 class="home-section-title"><?php echo get_theme_mod('section_title');?>
                     <span>&#11042;</span></h3>
