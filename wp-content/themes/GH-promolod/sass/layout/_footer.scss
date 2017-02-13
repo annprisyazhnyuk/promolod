@@ -1,0 +1,79 @@
+@import "../components/mixin";
+
+.site-footer {
+  padding: 14px 0;
+  background: rgba(51, 51, 51, 0.772549);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  a {
+    color: $second_color;;
+  }
+
+  .social-media-icons {
+
+    li {
+      display: inline-block;
+      width: 41px;
+      height: 41px;
+
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      background: #b5edfb;
+      border-radius: 100%;
+      text-align: center;
+
+      &:hover {
+        background: $second_color;
+      }
+
+      a {
+        line-height: 2.3;
+        font-size: 18px;
+        color: #303030;
+      }
+    }
+  }
+  .contact-info {
+    padding: 15px 0 0;
+    font-size: 14px;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+      .fa {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        .fa {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 680px){
+    .social-media-icons {
+      float: right;
+    }
+
+    .contact-info {
+      float: left;
+
+      li {
+        display: inline-block;
+        margin-right: 35px;
+      }
+    }
+  }
+}

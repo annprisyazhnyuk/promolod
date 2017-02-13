@@ -1,0 +1,147 @@
+@import "../components/mixin";
+
+/*----------------------------------- HEADER ------------------------------------------------*/
+.site-header {
+  overflow: hidden;
+  background: rgba(51, 51, 51, 0.772549);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  /*---------------------------------- HEADER LOGO ---------------------------------------------*/
+  .logo-header {
+    max-width: 20%;
+    margin-top: 13px;
+    margin-right: 20px;
+    float: left;
+    img {
+      max-height: 50px;
+      margin: 10px 0;
+    }
+  }
+  /*----------------------------------- BUTTON SUPPORT ----------------------------------------*/
+
+  .support-button {
+    float: left;
+    display: inline-block;
+    max-width: 155px;
+    margin: 27px 0 20px;
+    padding: 0 12px;
+
+    background: #fe5e31;
+    color: #eeeeee;
+    font-weight: 600;
+    border-radius: 6px;
+
+
+    line-height: 48px;
+    font-size: 14px;
+
+
+    &:hover {
+      background: darken(#fe5e31, 10%);
+    }
+
+    @media screen and (min-width: 768px) {
+      float: right;
+    }
+  }
+
+  /*----------------------------------- MENU (NAVIGATION) ----------------------------------------*/
+
+  .menu-menu1-container,
+  .menu-menu2-container {
+    @media screen and (min-width: 768px) {
+      float: left;
+    }
+  }
+
+  #head-menu {
+    overflow: hidden;
+    margin-top: 17px;
+    border-radius: 6px;
+    letter-spacing: -4px;
+
+
+    .active > a {
+      color: $second_color;
+    }
+
+    li {
+      letter-spacing: normal;
+
+      &:last-of-type a {
+        border: none;
+      }
+
+      a {
+        display: block;
+        padding: 10px 6px;
+
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 48px;
+
+        color: #fff;
+        text-decoration: none;
+
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+
+        &:hover {
+          color: $second_color;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+      }
+    }
+
+    @media screen and (min-width: 870px) {
+      margin-top: 29px;
+      li {
+        a {
+          padding: 0 7px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1010px) {
+      li {
+        a {
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1050px) {
+      li {
+        a {
+          padding: 0 15px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .current-menu-item {
+      a {
+        color: $second_color;
+      }
+    }
+  }
+}
+
+
+

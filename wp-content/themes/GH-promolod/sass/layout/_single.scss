@@ -1,0 +1,26 @@
+.single-content {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 70px;
+
+  .post-title {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #303030;
+    line-height: 45px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}

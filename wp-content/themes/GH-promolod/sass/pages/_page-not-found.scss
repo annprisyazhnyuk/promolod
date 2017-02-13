@@ -1,0 +1,82 @@
+.not-found {
+  margin-top: 80px;
+  font: 300 20px/1.5 'Open Sans', sans-serif;
+  text-align: center;
+
+  .home-page-button {
+    color: #3b93a8;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .searchform {
+    position: relative;
+    margin: 20px auto;
+
+    input[type="text"] {
+      display: inline-block;
+      padding: 3px 60px 0 3px;
+      border: none;
+      border-bottom: 1px solid #9b9999;
+
+      background: none;
+      color: #555;
+      outline: none;
+
+      font-size: 20px;
+      font-weight: 100;
+      line-height: 20px;
+      cursor: pointer;
+      &:focus {
+        width: 880px;
+        z-index: 1;
+        background-color: #eeeeee;
+        cursor: text;
+      }
+    }
+    input[type="submit"] {
+
+      border: medium none;
+      cursor: pointer;
+
+      display: inline-block;
+      width: 45px;
+      height: 35px;
+      outline: medium none;
+
+      position: absolute;
+      top: -5%;
+      right: 0;
+      z-index: 2;
+
+      text-indent: -10000px;
+      -webkit-transition: opacity 0.4s ease 0s;
+      transition: opacity 0.4s ease 0s;
+      :after {
+        position: absolute;
+        top: 6px;
+        right: 16px;
+        z-index: 3;
+
+        content: '\f002';
+        font: normal normal normal 18px/1 FontAwesome;
+        color: #555;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+form.searchform:after {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  z-index: 3;
+
+  content: '\f002';
+  font: normal normal normal 18px/1 FontAwesome;
+  color: #555;
+}

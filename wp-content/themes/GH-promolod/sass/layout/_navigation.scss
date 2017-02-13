@@ -1,0 +1,165 @@
+/*-------------------------------------NAVIGATION------------------------------*/
+
+$color-background: rgba(129, 154, 161, 0.75);
+$color-main: #55D6F5;
+$color-active: darken(#55D6F5, 10%);
+$color-link: #303030;
+
+$button-height: 27px;
+$button-width: 35px;
+
+
+.button_container {
+  position: fixed;
+  top: 38px;
+  right: 2%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $color-active;
+    }
+    .middle {
+      opacity: 0;
+      background: $color-active;
+    }
+
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $color-active;
+    }
+  }
+
+  span {
+    background: $color-main;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  all .35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .menu-menu1-container,
+  .menu-menu2-container {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s, visibility .35s, height .35s;
+    overflow: hidden;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+      }
+    }
+    nav {
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+
+      li {
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+
+        a {
+          display: block;
+          position: relative;
+          color: $color-link;
+          text-decoration: none;
+          overflow: hidden;
+
+          background: rgba(51,51,51,1);
+
+          &:hover:after,
+          &:focus:after,
+          &:active:after {
+            width: 100%;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            transform: translateX(-50%);
+            height: 1.5px;
+            background: $color-active;
+            transition: .35s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
